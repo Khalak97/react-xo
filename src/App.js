@@ -27,7 +27,7 @@ class App extends React.Component {
       if(this.state.squares[line[0]] === s
         && this.state.squares[line[1]] === s
         && this.state.squares[line[2]] === s ){
-          alert(s + ' win');
+          alert(s + ' wins game');
           setTimeout(()=>{
             this.setState({squares: Array(9).fill(null)});
             this.setState({count: 0})
